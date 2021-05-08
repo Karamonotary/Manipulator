@@ -50,7 +50,7 @@ public:
     //! \param y координата y объекта
     MapObject(int x, int y, double mass, double leght, double width, double angle,int point_force_x,  int point_force_y, double  force):  id(id_source++), x(x), y(y), mass(mass),
 
-                                                                            leght(),weight(),angle(), point_force_x(),point_force_y(),force(){}
+                                                                            leght(),width(),angle(), point_force_x(),point_force_y(),force(){}
 
     //! копирующий конструктор. Обеспечивает
     //! уникальность идентификатора
@@ -92,9 +92,7 @@ public:
     }
 
     //! вывод для отладки карты(исправить потом)
-    virtual void print() const {
-        printf(" on (%i, %i,%i)\n", x, y,angle);
-    }
+    virtual void print() const;
     //! вывод для консольного представления карты.
     //! Объект представляется одной буквой
     virtual void show() const = 0;
@@ -102,9 +100,8 @@ public:
     //! \return копия объекта
     //!    (независимо от типа)
     virtual MapObject* clone() const = 0;
-    //! виртуальный деструктор у наследуемого
-    //! класса нужен обязательно
-    virtual ~MapObject() {}
+
+    ~MapObject();
 };
 
 

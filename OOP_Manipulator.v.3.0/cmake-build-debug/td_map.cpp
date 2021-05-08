@@ -6,6 +6,8 @@
 #include<cassert>
 #include<algorithm>
 #include<list>
+#include <iterator>
+#include <iostream>
 
 #include "td_map.h"
 
@@ -22,9 +24,9 @@ Map::Map(int size_x, int size_y,
 
 void Map::print() const {
     // перебираем все объекты карты
-    for (auto it=objects.begin(); it != objects.end(); ++it)
-        // напечатать информацию о текущем объекте
-        it->print();
+    list<MapObject *>::iterator it;
+    for (auto it : objects)
+   it -> print();
 }
 
 bool Map::add_object(MapObject *obj) {
@@ -32,6 +34,7 @@ bool Map::add_object(MapObject *obj) {
     for (auto it : objects)
         if(it != obj)
        objects.push_back(obj);
+        else  printf("It's not unique object");
 }
 
 Map::~Map() {

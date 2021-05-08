@@ -127,6 +127,33 @@ OOP_Manipulator_v_3_0\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Manipulator_v_3_0.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOP_Manipulator_v_3_0.dir\build
 .PHONY : OOP_Manipulator_v_3_0\fast
 
+Testing\test.obj: Testing\test.cpp.obj
+
+.PHONY : Testing\test.obj
+
+# target to build an object file
+Testing\test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Manipulator_v_3_0.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOP_Manipulator_v_3_0.dir\Testing\test.cpp.obj
+.PHONY : Testing\test.cpp.obj
+
+Testing\test.i: Testing\test.cpp.i
+
+.PHONY : Testing\test.i
+
+# target to preprocess a source file
+Testing\test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Manipulator_v_3_0.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOP_Manipulator_v_3_0.dir\Testing\test.cpp.i
+.PHONY : Testing\test.cpp.i
+
+Testing\test.s: Testing\test.cpp.s
+
+.PHONY : Testing\test.s
+
+# target to generate assembly for a file
+Testing\test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Manipulator_v_3_0.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOP_Manipulator_v_3_0.dir\Testing\test.cpp.s
+.PHONY : Testing\test.cpp.s
+
 action.obj: action.cpp.obj
 
 .PHONY : action.obj
@@ -298,6 +325,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OOP_Manipulator_v_3_0
+	@echo ... Testing/test.obj
+	@echo ... Testing/test.i
+	@echo ... Testing/test.s
 	@echo ... action.obj
 	@echo ... action.i
 	@echo ... action.s

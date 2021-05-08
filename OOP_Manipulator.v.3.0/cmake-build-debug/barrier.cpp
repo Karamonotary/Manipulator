@@ -4,7 +4,11 @@
 
 #include "barrier.h"
 void Barrier::print() const {
-    printf("Barrier, damage=%i, max_dist=%i",
-           mov);
+    printf("Barrier");
     MapObject::print();
+}
+
+void Barrier::move_on(int dx, int dy) {
+    printf("Barrier doing step anythere");
+
 }
