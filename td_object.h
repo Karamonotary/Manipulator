@@ -59,7 +59,9 @@ public:
 
     //! получение координаты x
     //! \return координата
-    int get_x() const;
+    int get_x() const{
+        return x;
+    };
     //! получение координаты y
     //! \return координата
     int get_y() const {
@@ -91,13 +93,17 @@ public:
 
     //! вывод для отладки карты(исправить потом)
     virtual void print() const;
+
+
+
     //! вывод для консольного представления карты.
     //! Объект представляется одной буквой
+
     virtual void show() const = 0;
     //! создание копии текущего объекта
     //! \return копия объекта
     //!    (независимо от типа)
-  //  virtual MapObject* clone() const = 0;
+   virtual MapObject* clone() const = 0;
 
     virtual ~MapObject();
 };

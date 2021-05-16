@@ -17,7 +17,7 @@ public:
     //! сдвиг на указанные величины по x и y
     //! \param dx предлагаемое изменение координаты x
     //! \param dx предлагаемое изменение координаты y
-    void move_on(int dx, int dy);
+    void move_onB(int dx, int dy);
 
     //! печать отладочной информации о препятствии
     void print() const;
@@ -26,9 +26,9 @@ public:
         printf("m");
     }
     //! создание копии
-    //Barrier* clone() const {
-  //      return new Barrier(get_x(), get_y(), get_mass(),get_leght(),get_width(),get_angle(),get_point_force_x(), get_point_force_y(), get_force(),mov);
-   // }
+    Barrier* clone() const {
+      return new Barrier(get_x(), get_y(), get_mass(),get_leght(),get_width(),get_angle(),get_point_force_x(), get_point_force_y(), get_force(),mov);
+    }
 };
 
 

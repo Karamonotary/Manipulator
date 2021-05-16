@@ -9,7 +9,9 @@ int MapObject::id_source = 0;
 
 
 void MapObject::print() const {
-    printf("MapObject::print");
-
+    printf("MapObject::print %i - x, %i - y \n",x,y);
 }
+
+
+
 MapObject::~MapObject() {}

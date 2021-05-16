@@ -8,7 +8,7 @@ void Barrier::print() const {
     MapObject::print();
 }
 
-void Barrier::move_on(int dx, int dy) {
+void Barrier::move_onB(int dx, int dy) {
     printf("Barrier doing step anythere");
 
 }

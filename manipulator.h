@@ -21,16 +21,18 @@ public:
     //! \param dx предлагаемое изменение координаты y
     void move_on(int dx, int dy);
 
-    //! печать отладочной информации
+    //! печать отладочной информации о препятствии
     void print() const;
     //! вывод на карту
     void show() const {
         printf("m");
     }
+    void move_onM(int dx, int dy) ;
+
     //! создание копии
-   // Manipulator* clone() const {
-     //   return new Manipulator(get_x(), get_y(), get_mass(),get_leght(),get_width(),get_angle(), get_point_force_x(), get_point_force_y(), get_force(),number);
-    //}
+   Manipulator* clone() const {
+       return new Manipulator(get_x(), get_y(), get_mass(),get_leght(),get_width(),get_angle(), get_point_force_x(), get_point_force_y(), get_force(),number);
+    }
 };
 
 

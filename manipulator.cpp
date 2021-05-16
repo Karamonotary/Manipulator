@@ -4,16 +4,13 @@
 
 #include "manipulator.h"
 
-//void   Manipulator::move_on(int dx, int dy) {
- //   move_to(dx, dy);
-//}
 
-void   Manipulator::print() const {
-    printf("  Manipulator");
+void Manipulator::print() const {
+    printf("Manipulator");
     MapObject::print();
 }
 
-void Manipulator::move_on(int dx, int dy) {
-    printf("Manipulator doing step anythere");
-
+void Manipulator::move_onM(int dx, int dy) {
+    printf("Barrier doing step anythere");
+return;
 }

@@ -1,0 +1,2 @@
+cres: *.h, barrier.cpp,manipulator.cpp,td_map.cpp,td_object.cpp,c_Map.cpptest3.cpp
+g++ -std=c++11 -o cres -g -O0 *.cpp

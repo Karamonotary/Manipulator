@@ -10,6 +10,7 @@
 #include "td_object.h"
 
 using std::list;
+class MapObject;
 
 class Map {
     list<MapObject *> objects;
@@ -23,6 +24,7 @@ public:
     Map(int size_x, int size_y,
         int basa_x, int basa_y);
 
+    void show() const;
     //! вывод отладочной текстовой информации о карте
     void print() const;
 
@@ -31,10 +33,8 @@ public:
 
     //!  добавление на карту объекта.
     //! Объект переходит в собственность карты.
-    //! \param obj указатель на добавляемый объект
-    //! \return true, если объект добавлен на карту
 
-    bool add_object(MapObject *obj);
+    void add_object(MapObject *obj);
 
    // Map(const Map &m);
 
